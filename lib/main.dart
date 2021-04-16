@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_of_week/animated_container.dart';
 import 'package:flutter_widget_of_week/expanse_panel_test.dart';
 
 void main() {
   runApp(MaterialApp(
     title: 'Navigation Basics',
+    debugShowCheckedModeBanner: false,
     home: MyApp(),
   ));
 }
@@ -22,6 +24,15 @@ class MyApp extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ExpansePanelTest()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("Animated Container"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AnimatedContainerExample()),
                 );
               },
             ),
