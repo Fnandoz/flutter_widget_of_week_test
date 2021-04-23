@@ -36,6 +36,19 @@ class MyApp extends StatelessWidget {
                 );
               },
             ),
+            ListTile(
+              title: Text("AboutDialog"),
+              onTap: () {
+                showAboutDialog(
+                  context: context,
+                  applicationVersion: "1.0.0",
+                  applicationIcon: FlutterLogo(),
+                  applicationLegalese: "Test test test",
+
+
+                );
+              },
+            ),
           ],
         ),
       ),
